@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 #{title} - #{artist}
+  if year < (new Date()).getFullYear()
+    p Published in #{year}
+  else
+    p NEW!
+
+  if instock
+    p(class="price") #{price}$
+  else
+    p Out of stock...
