@@ -1,5 +1,14 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	h1= title
+	p Welcome to #{title}
+
+	p
+		| Go see our 
+		a(href="/albums") albums list
+		|  for more infos.
+	p
+		| Or explore our 
+		a(href="/xml") database
+		| .
